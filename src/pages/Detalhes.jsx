@@ -194,7 +194,7 @@ function Detalhes(props) {
         api.get(`/movie/${id}`).then(resp => {
             setMovieDetail(resp.data)
         });
-    }, []);
+    }, [id]);
 
     
         

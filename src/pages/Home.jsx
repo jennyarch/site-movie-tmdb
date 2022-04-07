@@ -103,7 +103,7 @@ function Home(props) {
             .catch(error => {
                 console.log(error)
             });
-        }, []);
+        }, [page]);
     }
 
     function PageDetails(id) {
@@ -114,7 +114,7 @@ function Home(props) {
     }
 
 
-    const [page, setPage] = useState(1);
+    // const [page, setPage] = useState(1);
 
     const handleChange = (event, value) => {
         event.preventDefault();

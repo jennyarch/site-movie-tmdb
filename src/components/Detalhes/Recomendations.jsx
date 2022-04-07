@@ -89,7 +89,7 @@ function Recomendations (){
         api.get(`/movie/${id}/recommendations`).then(resp => {
             setListRecomendations(resp.data.results)
         })
-    }, []);
+    }, [id]);
 
 
 

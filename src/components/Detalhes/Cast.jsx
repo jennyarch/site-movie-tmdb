@@ -85,7 +85,7 @@ function Cast(props){
         api.get(`/movie/${id}/credits`).then(resp => {
             setListCast(resp.data.cast)
         });
-    }, []);
+    }, [id]);
 
     return(
         <CastBox>

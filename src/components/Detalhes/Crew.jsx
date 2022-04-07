@@ -53,7 +53,7 @@ function Crew(props){
         api.get(`/movie/${id}/credits`).then(resp => {
             setListCrew(resp.data.crew)
         });
-    }, []);
+    }, [id]);
 
 
 

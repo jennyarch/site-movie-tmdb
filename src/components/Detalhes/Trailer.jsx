@@ -54,7 +54,7 @@ function Trailer (){
         api.get(`/movie/${id}/videos`).then(resp => {
             setListTrailer(resp.data.results)
         })
-    }, []);
+    }, [id]);
     
    /*  const opts = {
         height:'390',
@@ -64,7 +64,7 @@ function Trailer (){
             autoplay:1,
         }
     } */
-    const videoURL = `https://www.youtube.com/watch?v=`;
+    // const videoURL = `https://www.youtube.com/watch?v=`;
     const opts = {
         height: '510',
         width: '907',
