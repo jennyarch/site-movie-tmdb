@@ -216,7 +216,7 @@ const Container = () => {
                 api.get("/genre/movie/list").then(resp => {
                     setGenres(resp.data.results)
                 }) 
-            }, []);
+            }, [genres]);
         
         
 
